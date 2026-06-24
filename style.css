@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #f0f0f0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 55px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #eaeaea;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #d6d6d6;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.equal {
+  grid-row: span 2;
+  background: #4a90e2;
+  color: white;
+}
+
+.equal:hover {
+  background: #357bd8;
+}
+
+.zero {
+  grid-column: span 1;
+}
+
+.clear {
+  background: #ff5c5c;
+  color: white;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #f0f0f0;
+  animation: colorAnimate 3s ease-in 0s infinite alternate;
+}
+@keyframes colorAnimate {
+  0% { background-color: #eb7d7d; }
+  50% { background-color: #66a9db; }
+  100% { background-color: #9de032; }
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 55px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #eaeaea;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #d6d6d6;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.equal {
+  grid-row: span 2;
+  background: #4a90e2;
+  color: white;
+}
+
+.equal:hover {
+  background: #357bd8;
+}
+
+.zero {
+  grid-column: span 1;
+}
+
+.clear {
+  background: #ff5c5c;
+  color: white;
+}
